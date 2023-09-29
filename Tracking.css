@@ -1,0 +1,195 @@
+body {
+    /* Background properties for the slideshow */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: 65%;
+    background-image: url('https://static5.depositphotos.com/1012895/496/i/450/depositphotos_4969119-stock-photo-loading-cargo-plane.jpg');
+    
+   
+}
+
+
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+    
+
+    .tracking-box {
+        border: 2px solid #ccc; /* Increased border thickness */
+        border-radius: 50px; /* Reduced border-radius for a larger appearance */
+        padding: 30px; /* Increased padding */
+        display: flex;
+        align-items: center;
+        width: 80%; /* Increased width */
+    }
+    
+    .tracking-input {
+        width: 100%; /* Expanded input field width */
+        padding: 25px; /* Increased padding */
+        margin-right: 50px; /* Increased margin */
+        border-radius: 20px; /* Adjusted border-radius */
+        font-size: 16px; /* Increased font size */
+    }
+    
+    .tracking-button {
+        padding: 10px 20px; /* Increased padding */
+        background-color: orange;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px; /* Adjusted border-radius */
+        font-size: 16px; /* Increased font size */
+        width: auto; /* Removed fixed width to allow button to expand */
+    }
+    
+}
+
+
+
+
+/* Rest of your existing styles for the tracking box */
+.tracking-box {
+    border: 1px solid #ccc;
+    border-radius: 35px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 20%;
+}
+
+.tracking-input {
+    width: 90%;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 16px;
+}
+
+.tracking-button {
+    padding: 5px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 20%;
+}
+
+
+
+.f { position: relative; }
+.is-vishidden {
+  position: absolute;
+	overflow: hidden;
+	width: 1px;
+	height: 20px;
+	padding: 0;
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	}
+
+.pattern {
+	padding: 1em;
+	margin-top: 50px;
+	}
+
+input {
+	display: block;
+	border: 1px solid black;
+    border-radius: 20px;
+	&[type=search] {
+	    width: 100%;
+	    height: 3.2em;
+	    padding: 1em;
+	    padding-right: 9em;
+	    position: center;
+	   	top: 0;
+	   	border-radius: 14px;
+		border-end-end-radius: 4px;
+		-webkit-border-image: 4px;
+	}
+	&[type=submit] {
+	  position: absolute;
+	  right: 0.75em;
+		top: 0.5em;
+	 	bottom: 0.5em;
+		z-index: 1;
+		width: 6em;
+		padding: 0;
+		cursor: pointer;
+		background: #dc8306;
+		border-radius: 14px;
+		border-end-end-radius: 4px;
+		-webkit-border-image: 4px;
+		&:hover {background: #da8103;}
+		}
+	}
+    .btn.search-submit:hover {
+        transform: scale(1.05);
+        color: black;
+    }
+    
+    .btn.search-submit:active {
+        transform: scale(0.95);
+    }
+    .top-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7px 25px;
+        background: linear-gradient(to right, #00093c, #2d0b00);
+        position:fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+        margin-bottom: 20px; /* Add margin at the bottom */
+        
+    
+    }
+    
+    .top-bar h3 {
+        color: #fff;
+        cursor: pointer;
+        display: flex; /* Add this line to make h3 a flex container */
+        align-items: center;
+        
+    }
+    
+    
+    /* Apply the blue color on hover
+    .top-bar span:hover {
+        color: yellow;
+        color: black;
+        color: red;
+    } */
+    @media (max-width: 768px) {
+        .top-bar {
+          padding: 5px 10px; /* Adjust padding for smaller screens */
+          margin-bottom: 10px; /* Adjust margin at the bottom */
+        }
+      
+        .top-bar h3 {
+          font-size: 18px; /* Adjust font size for smaller screens */
+        }
+    
+    }
+    
+    .top-bar ul{
+        list-style: none;
+        display: flex;
+    }
+    .top-bar li{
+        margin:0px 5px;
+        
+    }
+    .top-bar a{
+        color: #fff;
+    }

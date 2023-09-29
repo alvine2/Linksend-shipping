@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/**{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+
+}
+.container {
+    margin: 0 10%;  Add margin on left and right sides 
+}
+
+  
+
+.wrapper {
+    height: 100vh;
+}
+
+.is-horizontal-center {
+    justify-content: center;
+    padding-top: 25px;
+    text-align: center;
+}
+.field.has-addons{
+    justify-content: center;
+}
+.section {
+    padding: 1.5rem 1.5rem;
+}
+.card-image{
+    margin: 0 auto;
+    margin-bottom: -25px;
+}
+.info-area {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: black;
+    
+}
+.info-area p{
+    color: black;
+}
+.info-output {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.info-output p{
+    color: black;
+}
+.data-conatiner{
+    display: flex;
+    font-size: 1em;
+}
+
+.red {
+    color: hsl(348, 100%, 61%);
+}
+
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes bounce {
+    0%, 20%, 53%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    }
+    40%, 43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+    }
+    70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+    }
+    90% {
+    -webkit-transform: translate3d(0,-4px,0);
+    transform: translate3d(0,-4px,0);
+    }
+    }
+    
+    @keyframes bounce {
+    0%, 20%, 53%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    }
+    40%, 43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+    }
+    70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+    }
+    90% { -webkit-transform: translate3d(0,-4px,0); transform: translate3d(0,-4px,0);
+    }
+    } 
+
+@media only screen and (max-width: 400px) {
+    .data-conatiner{
+    font-size: 0.75em;
+    }
+}
+h1{
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    margin-left: 1;
+    margin-right: 1;
+}
+/* Existing CSS code */
+
+/* Add media queries for responsiveness 
+@media screen and (max-width: 768px) {
+    .container {
+      margin: 0 5%; /* Adjust margin on left and right sides for smaller screens 
+    }
+  
+    .section {
+      padding: 1rem; /* Adjust padding for smaller screens 
+    }
+  
+    .card-image {
+      margin-bottom: -15px; /* Adjust margin for smaller screens 
+    }
+  
+    .info-area p,
+    .info-output p {
+      font-size: 14px; /* Adjust font size for smaller screens 
+  
+    .data-conatiner {
+      font-size: 0.9em; /* Adjust font size for smaller screens 
+    }
+  
+    h1 {
+      font-size: 24px; /* Adjust font size for smaller screens
+  
+    h2 {
+      font-size: 20px; /* Adjust font size for smaller screens 
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .data-conatiner {
+      font-size: 0.75em; /* Further reduce font size for smaller screens 
+    }
+  
+    h1 {
+      font-size: 22px; /* Further reduce font size for smaller screens 
+    }
+  
+    h2 {
+      font-size: 18px; /* Further reduce font size for smaller screens 
+    }
+  }*/
+  .container {
+    background-image: url("COMING.jpg");
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+  }
+  

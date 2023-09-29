@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://kit.fontawesome.com/2385e574ab.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tracking</title>
+    <link rel="stylesheet" type="text/css" href="Tracking.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+<script>
+    var url = 'https://widget.bot.space/js/widget.js';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+      "enabled": true,
+      "chatButtonSetting": {
+        "backgroundColor": "#13C656",
+        "ctaText": "",
+        "borderRadius": "12",
+        "marginLeft": "20",
+        "marginBottom": "20",
+        "marginRight": "20",
+        "position": "right"
+      },
+      "brandSetting": {
+        "brandName": "linksend",
+        "brandSubTitle": "Typically replies within a day",
+        "brandImg": "https://img1.wsimg.com/isteam/ip/4bd22fc3-30e4-409c-9d44-745c8822b6aa/linksend-logo.png/:/rs=w:189,h:180,cg:true,m/cr=w:189,h:180/qt=q:95",
+        "welcomeText": "Hello, Thank you for contacting Linksend. How may I help you?",
+        "messageText": "",
+        "backgroundColor": "#085E54",
+        "ctaText": "Start Chat",
+        "borderRadius": "12",
+        "autoShow": false,
+        "phoneNumber": "256777920138"
+      }
+    };
+    s.onload = function() { CreateWhatsappChatWidget(options); };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  </script>
+<body>
+  <div class="top-bar">
+    <span></span>
+    <h3>Live Uganda. Buy USA. Experience Both</h3>
+    
+  <ul>
+     <li>
+      <a href="https://www.instagram.com/linksendug/">
+        <i class="fab fa-facebook fa-beat"></i>
+      </a>
+     </li>
+     <li>
+      <a href="https://twitter.com/linksendug">
+        <i class="fab fa-twitter fa-beat"></i>
+      </a>
+     </li>
+     <li>
+      <a href="https://www.instagram.com/linksendug/">
+        <i class="fab fa-instagram fa-beat"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+    <!-- <div id="headerContainer"></div>-->
+    <!-- Tracking Box -->
+    
+    <div id="pattern" class="pattern">
+        <form role="search" method="get" id="searchform" action="" method="post" class="f searchform">
+               <label class="is-vishidden">Track your package</label>
+               <input type="search" placeholder="Track your package" name="s" id="s" />
+               <input type="submit" class="btn search-submit" id="searchsubmit" value="Track">
+          </form>
+  </div>
+</body>
+
+<script>
+    // Fetch the header content using XMLHttpRequest or Fetch API
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(headerContent => {
+            // Insert the fetched header content into the headerContainer div
+            document.getElementById('headerContainer').innerHTML = headerContent;
+        })
+        .catch(error => {
+            console.error('Error fetching header:', error);
+        });
+
+       //Fetch the footer content using Fetch API
+        fetch('footer.html')
+           .then(response => response.text())
+           .then(footerContent => {
+                //Insert the fetched footer content into the footerContainer div
+                document.getElementById('footerContainer').innerHTML = footerContent;
+            })
+            .catch(error => {
+               console.error('Error fetching footer:', error);
+            });
+</script>
+</html>
